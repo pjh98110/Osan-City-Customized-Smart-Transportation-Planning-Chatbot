@@ -23,7 +23,7 @@ if "gemini_api_key" not in st.session_state:
 
 # 세션 변수 체크
 def check_session_vars():
-    required_vars = ['selected_district', 'type_its']
+    required_vars = ['selected_district']
     for var in required_vars:
         if var not in st.session_state:
             st.warning("필요한 정보가 없습니다. 사이드바에서 정보를 입력해 주세요.")
